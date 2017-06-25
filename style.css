@@ -1,0 +1,217 @@
+/*common styles*/
+@font-face{
+    font-family: 'chunk'; /* Имя шрифта */
+    src: url('fonts/Chunk.ttf');
+    } /* Путь к файлу со шрифтом */
+body{
+	margin: 0 0;
+	padding: 0 0;
+	font-family: helvetica,georgia;
+	font-size: 16px;
+}
+a{
+	text-decoration: none;
+}
+img{
+	height: auto;
+	max-width: 100%;
+}
+.container{
+	margin: 0 auto;
+	max-width: 1170px;
+}
+.text-left{
+	text-align: left;
+}
+.text-center{
+	text-align: center;
+}
+/*header*/
+header{
+	padding-bottom: 107px;
+	background-image: url("img/head_bg.jpg");
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+header h1,.menu{
+	display: inline-block;
+}
+header h1{
+	font-family: montserrat;
+	font-size: 25px;
+	color: #fff;
+}
+.menu-head:hover{
+	background-color: rgba(0, 0, 0, 0.06)
+}
+ header ul li{
+ 	padding: 55px 33px;
+	display: inline-block;
+	list-style: none;
+}
+header ul li a{
+	font-family: lato;
+	font-size: 14px;
+	color: #fff;
+	text-transform: capitalize;
+
+}
+ header ul li:first-child{
+ 	padding: 20px 15px;
+ 	min-width: 80px;
+ 	text-align: center;
+	display: inline-block;
+	list-style: none;
+	border: 2px solid #fff;
+	border-radius: 30px;
+}
+.menu{
+	margin-left: 304px;
+}
+header h2{
+	font-family: chunk;
+	font-size: 80px;
+	color: #fff;
+}
+.lost{
+	color: #01a2a6;
+}
+.head-text{
+	margin: 0 auto;
+	font-family: lato;
+	font-size: 18px;
+	line-height: 35px;
+	max-width: 650px;
+	color: #fff;
+}
+.head-button{
+	margin: 50px auto 0 auto;
+	text-align: center;
+	padding: 30px 60px;
+	max-width: 230px;
+	background-color: #ffffa6;
+	border-radius: 36px; 
+}
+.head-button a{
+	color: #10273d;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+/*about*/
+.about{
+	padding: 109px 0;
+}
+.img-wrap,.text-wrap{
+	display: inline-block;
+}
+.text-wrap{
+	max-width: 585px;
+	margin-left: 115px;
+}
+.about h2{
+	margin: 0 0px;
+	font-family: chunk;
+	font-size: 60px;
+	color: #29d9c2;
+}
+.about-head{
+	color: #01a2a6;
+}
+.description{
+	font-family: lato;
+	margin-top: 56px;
+	font-size: 16px;
+	line-height: 35px;
+	color: #777777;
+}
+/*destination*/
+.destination{
+	padding: 70px 0; 
+	background-color: #f2fefe;
+}
+#search-ico{
+font-size: 10em; /* задает размер иконки */
+width: 0.3em; height: 0.3em; margin-bottom: 20px;
+border: 0.1em solid #52C8E4;
+position: relative;
+border-radius: 50%;}
+#search-ico:before {
+content: "";
+width: 0.3em; height: 0.08em;
+position: absolute; right: -0.25em; bottom: -0.1em;
+background: #52C8E4;
+transform: rotate(45deg);}
+.block{
+	max-width: 970px;
+	margin: 0 auto;
+}
+.destination h2,.wraper{
+	display: inline-block;
+}
+.wraper{
+	float: right;
+}
+.destination h2{
+		font-family: chunk;
+		font-size: 67px;
+	color: #29d9c2;
+}
+.info-text{
+	color: #c1c1c1;
+	margin-top: -10px;
+	padding-bottom: 4px;
+}
+.places form, p{
+	display: inline-block;
+}
+.place-description{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding-top: 58px;
+	padding-bottom: 75px;
+	max-width: 387px;
+	padding-left: 37px;
+	font-size: 16px;
+	line-height: 35px;
+	color: #777777;
+	display: inline-block;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+.first-block{
+	position: relative;
+}
+.place-description h3{
+	padding-bottom: 30px;
+	font-family: lato;
+	font-size: 30px;
+	color: #01a2a6;
+	font-weight: 100;
+}
+/*navigation*/
+.navigation a{
+	display: block;
+		font-size: 16px;
+		line-height: 35px;
+		font-weight: bold;
+		color: #acacac;
+		transition: 0.2s;
+}
+.navigation a:hover{
+	font-size: 20px;
+	color: #01a2a6;
+}
+.chevron {
+height: 50px; width: 160px; margin: 6px;
+position: relative;}
+.chevron:before, .chevron:after {
+content: "";
+height: 100%; width: 50%;
+position: absolute; top: 0;
+background: #F45919;}
+.chevron:before {
+left: 0;
+transform: skew(0deg, 10deg);}
+.chevron:after {
+right: 0;
+transform: skew(0deg, -10deg);}
